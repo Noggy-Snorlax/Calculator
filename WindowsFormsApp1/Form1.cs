@@ -70,7 +70,9 @@ namespace WindowsFormsApp1
             try
             {
                 this.answer.Text = "" + Calculate(textBoxInput.Text);
-            }catch
+                this.answer.ForeColor = System.Drawing.Color.Black;
+            }
+            catch
             {
                 this.answer.Text = "Invalid Input or Have some bug. Sorry";
                 this.answer.ForeColor = System.Drawing.Color.Red;
